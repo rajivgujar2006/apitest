@@ -1,0 +1,14 @@
+{
+  "name": "ibl_assignment",
+  "description": "assignment for ibl project",
+  "type": "module",
+  "scripts": {
+    "test": "cucumber-js features/ -f json:report/cucumber_report.json && node htmlreport.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "axios": "^1.7.2",
+    "chai": "^5.1.1",
+    "cucumber-html-reporter": "^7.1.1"
+  }
+}

@@ -1,0 +1,311 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;for-a-tv-channel-verify-the-request-response-and-time-taken",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "For a tv channel verify the request response and time taken",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I hit the channel endpoint \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 447936957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 795166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the response time should be below 1000 milliseconds",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 637667
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;verify-that-id-has-a-value-and-type-in-episode-is-always-episode-data-array-and-id-field",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify that id has a value and type in episode is always episode data array and id field",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I hit the channel endpoint \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120127833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify in response \"id\" is not empty",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1121082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Verify in response episode has type as \"episode\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270915
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;verify-that-title-field-in-episode-is-never-empty",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify that title field in episode is never empty",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I hit the channel endpoint \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120039750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Verify in response for episode \"title\" is not empty",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1116416
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;verify-that-title-field-in-episode-is-never-empty",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify that title field in episode is never empty",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I hit the channel endpoint \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119507249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Verify in response only episode is live",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 983249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;verify-transmission-start-date-is-earlier-to-transmission-end-date",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Verify transmission start date is earlier to transmission end date",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I hit the channel endpoint \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121140042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Verify transmission start date earlier to end date",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 871917
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;verify-date-in-header",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify date in header",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I hit the channel endpoint \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124760583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Verify date in response header",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650542
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tv-channel-valid-scenario-test;verify-error-code-and-error-details",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify error code and error details",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I hit the invalid channel endpoint \"https://testapi.io/api/RMSTest/ibltest/2023-09-11\"",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113052750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "the response status code should be 404",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Verify the error has expected details and code",
+            "match": {
+              "location": "file:/Users/rajivgujar/Desktop/apitest/steps/channel.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502584
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tv-channel-valid-scenario-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "TV channel valid scenario test",
+    "tags": [],
+    "uri": "features/channel.feature"
+  }
+]
